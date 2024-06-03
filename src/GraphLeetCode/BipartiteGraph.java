@@ -19,7 +19,7 @@ public class BipartiteGraph {
 
     public static boolean isBipartite(int[][] graph) {
         int n = graph.length;
-        int color[] = new int[n];
+        int[] color = new int[n];
         Queue<Integer> q = new LinkedList<>();
         Arrays.fill(color, -1);
         for (int i = 0; i < n; i++) {
