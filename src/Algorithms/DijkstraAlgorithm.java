@@ -37,38 +37,6 @@ public class DijkstraAlgorithm {
         }
 
         return dist;
-
-
-//        PriorityQueue<Pair> pq = new PriorityQueue<>((a, b) -> a.dist - b.dist);
-//
-//        int[] dist = new int[V];
-//        Arrays.fill(dist, Integer.MAX_VALUE);
-//        dist[S] = 0;
-//
-//        pq.add(new Pair(S, 0));
-//
-//        while (!pq.isEmpty()) {
-//            Pair current = pq.poll();
-//            int node = current.src;
-//            int distance = current.dist;
-//
-//            if (distance > dist[node]) {
-//                continue;
-//            }
-//
-//            for (ArrayList<Integer> neighbour : adj.get(node)) {
-//                int edgeNode = neighbour.get(0);
-//                int edgeWeight = neighbour.get(1);
-//
-//                if (distance + edgeWeight < dist[edgeNode]) {
-//                    dist[edgeNode] = distance + edgeWeight;
-//                    pq.add(new Pair(edgeNode, dist[edgeNode]));
-//                }
-//            }
-//        }
-//
-//        return dist;
-
     }
 
     public static void main(String[] args) {
